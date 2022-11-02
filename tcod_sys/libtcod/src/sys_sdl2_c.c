@@ -239,7 +239,7 @@ static SDL_Surface *create_surface(int width, int height, bool with_alpha) {
 }
 
 static void create_window(int w, int h, bool fullscreen) {
-	uint32_t winflags = SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL;
+	uint32_t winflags = SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL | SDL_WINDOW_ALLOW_HIGHDPI;
 #if defined(TCOD_ANDROID)
 	/* Android should always be fullscreen. */
 	TCOD_ctx.fullscreen = fullscreen = true;
