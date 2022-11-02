@@ -498,11 +498,6 @@ extern "C" {
 #define SDL_HINT_THREAD_STACK_SIZE              "SDL_THREAD_STACK_SIZE"
 
 /**
- *  \brief If set to 1, then do not allow high-DPI windows. ("Retina" on Mac and iOS)
- */
-#define SDL_HINT_VIDEO_HIGHDPI_DISABLED "SDL_VIDEO_HIGHDPI_DISABLED"
-
-/**
  *  \brief A variable that determines whether ctrl+click should generate a right-click event on Mac
  *
  *  If present, holding ctrl while left clicking will generate a right click
